@@ -1,9 +1,18 @@
-var express = require('express');
-var port = process.env.PORT || 3000;
-var app = express();
+const express = require('express');
+const msyql = require('mysql')
+const myconn = require('express-myconnection')
+const port = process.env.PORT || 3000;
+const app = express();
+
+const dbOptions = {
+    host:'freedb.tech',
+    user: 'freedbtech_rigoalag',
+    password: 'martin51',
+    database: 'freedbtech_apitest'
+}
 
 app.get('/', function (req, res) {
-    res.send('Hola este es el puerto: ');
+    res.send('Prueba de imports y dboptions');
     console.log('desde el console')
 });
 
