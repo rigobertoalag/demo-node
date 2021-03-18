@@ -3,8 +3,8 @@ var port = process.env.PORT || 3000;
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('Hola este es el puerto: ', port);
-    console.log(port)
+    res.send('Hola este es el puerto: ');
+    console.log('desde el console')
 });
 
 app.listen(port, function () {
