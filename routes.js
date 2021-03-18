@@ -18,7 +18,7 @@ routes.get('/ahorro', (req, res)=>{
 routes.get('/ahorro/:id', (req, res)=>{
     req.getConnection((err, conn)=>{
         if(err) return res.send(err)
-        conn.query('SELECT * FROM books WHERE id = ?',[req.params.id], (err, rows)=>{
+        conn.query('SELECT * FROM ahorro WHERE id = ?',[req.params.id], (err, rows)=>{
             if(err) return res.send(err)
             res.json(rows)
         })
