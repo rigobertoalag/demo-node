@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
     console.log('desde el console')
 });
 
-app.use('/api', routes)
+//app.use('/api', routes)
 
 app.listen(port, function () {
     console.log(`Example app listening on port !`);
