@@ -13,7 +13,7 @@ routes.get('/ahorro', (req, res)=>{
         })
     })
 })
-/*
+
 //GET Ahorro by ID
 routes.get('/ahorro/:id', (req, res)=>{
     req.getConnection((err, conn)=>{
@@ -25,7 +25,7 @@ routes.get('/ahorro/:id', (req, res)=>{
     })
 })
 
-/** POST METHODS
+/** POST METHODS*/
 
 //POST nuevo ahrro 
 routes.post('/ahorro', (req, res)=>{
@@ -39,7 +39,7 @@ routes.post('/ahorro', (req, res)=>{
     })
 })
 
-/** GET METHODS TESTING
+/** GET METHODS TESTING*/
 
 //GET Todos los libros
 routes.get('/', (req, res)=>{
@@ -63,7 +63,7 @@ routes.get('/:id', (req, res)=>{
     })
 })
 
-/** POST METHODS TESTING
+/** POST METHODS TESTING*/
 
 //POST nuevo libro 
 routes.post('/', (req, res)=>{
@@ -76,5 +76,5 @@ routes.post('/', (req, res)=>{
         })
     })
 })
-*/
+
 module.exports = routes
