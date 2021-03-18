@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', function (req, res) {
-    res.send('Prueba rutas');
+    res.send('Prueba sin rutas');
     console.log('desde el console')
 });
 
