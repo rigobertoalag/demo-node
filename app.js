@@ -17,11 +17,11 @@ app.use(myconn(msyql, dbOptions, 'single'))
 app.use(express.json())
 
 app.get('/', function (req, res) {
-    res.send('Prueba sin rutas');
+    res.send('Prueba con rutas');
     console.log('desde el console')
 });
 
-//app.use('/api', routes)
+app.use('/api', routes)
 
 app.listen(port, function () {
     console.log(`Example app listening on port !`);
